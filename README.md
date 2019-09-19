@@ -16,9 +16,13 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
  
 **b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have?**
 
+10 bit, you can read this from the data sheet.
+
 ## Part B. RGB LED
 
 **How might you use this with only the parts in your kit? Show us your solution.**
+
+
 
 ## Part C. Voltage Varying Sensors 
  
@@ -26,11 +30,24 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 **a. What voltage values do you see from your force sensor?**
 
+I see from 0-4 V and 0-1010 for analog value. 
+
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
+
+Linear.
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
+I mapped the values from 0-1023 from the flex sensor to 0-255 for the LED
+
+```  
+  brightness = analogRead(A0);
+  val = map(brightness, 0, 1023, 0, 255);
+  analogWrite(led, val);
+```
+
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
+
 
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
