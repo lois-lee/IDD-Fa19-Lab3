@@ -49,7 +49,10 @@ I mapped the values from 0-1023 from the flex sensor to 0-255 for the LED
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
 
+
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
+
+Linear.
 
 ### 2. Accelerometer
  
