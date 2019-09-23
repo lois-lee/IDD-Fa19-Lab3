@@ -17,11 +17,14 @@
 
 **How might you use this with only the parts in your kit? Show us your solution.**
 
+[RGB LED](https://drive.google.com/drive/folders/1-oG2M18nJ7WUeI-lWXmDg_21EHhnDYSS)
 
 
 ## Part C. Voltage Varying Sensors 
  
 ### 1. FSR, Flex Sensor, Photo cell, Softpot
+
+[FSR connected to LED](https://drive.google.com/drive/folders/1-oG2M18nJ7WUeI-lWXmDg_21EHhnDYSS)
 
 **a. What voltage values do you see from your force sensor?**
 
@@ -53,6 +56,8 @@ Linear.
  
 **a. Include your accelerometer read-out code in your write-up.**
 
+[Code for RGB with accelerometer](https://github.com/lois-lee/IDD-Fa19-Lab3/blob/master/accel+disp.ino)
+[Accelerometer and RGB with Display](https://drive.google.com/file/d/1vO_NLwlGVpFAzzwcWWcIxq7nDz3DyJvq/view?usp=sharing)
 
 ## Optional. Graphic Display
 
