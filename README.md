@@ -57,7 +57,8 @@ Linear.
 **a. Include your accelerometer read-out code in your write-up.**
 
 [Code for RGB with accelerometer](https://github.com/lois-lee/IDD-Fa19-Lab3/blob/master/accel+disp.ino)
-[Accelerometer and RGB with Display](https://drive.google.com/file/d/1vO_NLwlGVpFAzzwcWWcIxq7nDz3DyJvq/view?usp=sharing)
+[Accelerometer and RGB with Display I](https://drive.google.com/file/d/1vO_NLwlGVpFAzzwcWWcIxq7nDz3DyJvq/view?usp=sharing)
+[Accelerometer and RGB with Display II](https://drive.google.com/file/d/1PHEh3p-tdwJnNnu8z0y6Cf7bUc0lwdtE/view?usp=sharing)
 
 ## Optional. Graphic Display
 
