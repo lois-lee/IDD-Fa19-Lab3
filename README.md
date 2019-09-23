@@ -24,7 +24,7 @@
  
 ### 1. FSR, Flex Sensor, Photo cell, Softpot
 
-[FSR connected to LED](https://drive.google.com/drive/folders/1-oG2M18nJ7WUeI-lWXmDg_21EHhnDYSS)
+[FSR connected to LED](https://drive.google.com/file/d/1qX9i05hJwVriUb1L4Uow_C2H4xEfExVn/view?usp=sharing)
 
 **a. What voltage values do you see from your force sensor?**
 
