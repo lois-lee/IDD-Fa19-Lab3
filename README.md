@@ -64,6 +64,9 @@ Linear.
 
 **Take a picture of your screen working insert it here!**
 
+[FSR + OLED Video](https://drive.google.com/file/d/1xwJhXTCkBJB-e8LdeofHwDhNpxahLR7x/view?usp=sharing)
+[FSR + OLED Code](https://github.com/lois-lee/IDD-Fa19-Lab3/blob/master/fsr%2Boled.ino)
+
 ## Part D. Logging values to the EEPROM and reading them back
  
 ### 1. Reading and writing values to the Arduino EEPROM
