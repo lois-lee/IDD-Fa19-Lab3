@@ -10,7 +10,9 @@
 
 const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
-
+int redPin = A0;
+int greenPin = A2;
+int bluePin = A1;
 // Used for software SPI
 #define LIS3DH_CLK 13
 #define LIS3DH_MISO 12
@@ -65,6 +67,53 @@ void loop() {
   Serial.print(" \tZ: "); Serial.print(event.acceleration.z); 
   Serial.println(" m/s^2 ");
 
+  if(lis.x > 0 && lis.y > 0 && lis.z > 0){
+      setColor(255, 0, 0);  // red
+      delay(1000);
+  }
+  if(lis.x > 0 && lis.y <= 0 && lis.z > 0){
+      setColor(0, 255, 0);  // green
+      delay(1000);
+  }
+  if(lis.x > 0 && lis.y > 0 && lis.z <= 0){
+      setColor(0, 0, 255);  // blue
+      delay(1000);
+  }
+  if(lis.x <= 0 && lis.y > 0 && lis.z > 0){
+      setColor(80, 0, 80);  // purple
+      delay(1000);
+  }
+  if(lis.x <= 0 && lis.y > 0 && lis.z > 0){
+      setColor(0, 255, 255);  // aqua
+      delay(1000);
+  }
+  if(lis.x <= 0 && lis.y > 0 && lis.z <= 0){
+      setColor(255, 255, 0);  // yellow
+      delay(1000);
+  }
+  if(lis.x <= 0 && lis.y <= 0 && lis.z <= 0){
+      setColor(80, 0, 80);  // purple
+      delay(1000);
+  } 
+  if(lis.x > 0 && lis.y <= 0 && lis.z <= 0){
+      setColor(255, 0, 0);  // red
+      delay(1000);
+  }
+ 
+//  setColor(255, 0, 0);  // red
+//  delay(1000);
+//  setColor(0, 255, 0);  // green
+//  delay(1000);
+//  setColor(0, 0, 255);  // blue
+//  delay(1000);
+//  setColor(255, 255, 0);  // yellow
+//  delay(1000);  
+//  setColor(80, 0, 80);  // purple
+//  delay(1000);
+//  setColor(0, 255, 255);  // aqua
+//  delay(1000);
+
+  
   Serial.println();
   lcd.clear();
 
@@ -84,4 +133,15 @@ void loop() {
   lcd.clear();
 
   delay(200); 
+}
+void setColor(int red, int green, int blue)
+{
+  #ifdef COMMON_ANODE
+    red = 255 - red;
+    green = 255 - green;
+    blue = 255 - blue;
+  #endif
+  analogWrite(redPin, red);
+  analogWrite(greenPin, green);
+  analogWrite(bluePin, blue);  
 }
