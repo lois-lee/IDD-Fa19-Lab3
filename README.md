@@ -82,9 +82,17 @@ Linear.
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
+Thr Atmega328 has 1KB EEPROM.
+
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
 
+We could convert from 0-1023 to 0-255 and then write the representation of that into 8 bits which is 1 byte. Since in I2C, the data is transferred in 8 bits to begin with, there is no real need to convert.
+
 **e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
+
+As can be seen in the following line of code:
+```  eeAddress += sizeof(float); //Move address to the next byte after float 'f'.```
+We could simply just move yo the next address and store all the information excess of a byte to the following address.
 
 **Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
 
