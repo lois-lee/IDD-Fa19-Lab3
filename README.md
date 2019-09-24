@@ -78,6 +78,8 @@ Linear.
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
+
+
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
