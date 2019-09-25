@@ -78,9 +78,11 @@ Linear.
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
-
+Not really, there would be no difference as long as we knew which potentiometer vals aligned with reading/writing etc.
 
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
+
+Because we only want it to happen once each time rather than loop continuously.
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
