@@ -104,6 +104,12 @@ We could simply just move yo the next address and store all the information exce
  
 **a. Insert here a copy of your final state diagram.**
 
+
 ### 3. Create your data logger!
  
 **a. Record and upload a short demo video of your logger in action.**
+[4 Note Recorder Demo Video](https://drive.google.com/file/d/1QBCjGelbfp8U8jaWn6sWwk0eqCp_2Lgg/view?usp=sharing)
+![](2.png)
+![](1.png)
+
+In the above image, you can see the print statements which show the notes recorded from the analog potentiometer which have been translated into readings for the speaker. Then the print statements below print out the values from EEPROM
