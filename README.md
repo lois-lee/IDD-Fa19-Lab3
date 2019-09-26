@@ -1,6 +1,7 @@
 # Data Logger (and using cool sensors!)
 
 *A lab report by Lois Lee.*
+[4 Note Recorder Demo Video](https://drive.google.com/file/d/1QBCjGelbfp8U8jaWn6sWwk0eqCp_2Lgg/view?usp=sharing)
 
 
 ## Part A.  Writing to the Serial Monitor
@@ -108,7 +109,9 @@ We could simply just move yo the next address and store all the information exce
 ### 3. Create your data logger!
  
 **a. Record and upload a short demo video of your logger in action.**
+
 [4 Note Recorder Code](data_logger.ino)
+
 [4 Note Recorder Demo Video](https://drive.google.com/file/d/1QBCjGelbfp8U8jaWn6sWwk0eqCp_2Lgg/view?usp=sharing)
 ![](2.png)
 ![](3.png)
